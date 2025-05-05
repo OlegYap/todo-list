@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import url('https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css');
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.sortable-tasks {
+    min-height: 100px;
+}
+
+.task-item {
+    cursor: move;
+    margin-bottom: 10px;
+}
+
+.ui-sortable-helper {
+    transform: rotate(2deg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.tag-badge {
+    margin-right: 5px;
+}
+
+.task-tags {
+    margin-top: 10px;
+}
+
+.drag-handle {
+    cursor: move;
+    color: #6c757d;
+    margin-right: 5px;
+}
